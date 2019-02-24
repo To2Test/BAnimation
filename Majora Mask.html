@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<style>
+	body{ background-color:rgb(40, 44, 52);}
+	.w {color: white}
+	.bstyle {
+		background: black;
+		border: none;
+		padding: 12px;
+		border: 2px solid white;
+		color: white;
+		cursor: pointer;
+	}
+</style>
+
+<body>
+<link rel="stylesheet" href="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.css"/>
+<script src="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.js"></script>
+
+<button class="bstyle" onclick="location.href='main.html'"><b>Home</b></button>
+
+<h2 class="w">Majora's Mask</h2>
+<video id="video-id" poster="majora mask.jpg" style="width: 1280px; height: 720px">
+    <source src="https://pouch.jumpshare.com/preview/YEO9SoAZs2kTnG5DfmgVVGIdm4dwI9tmeeRTLGXDHaZ9feInTlKkeCSkl9RU7lkM4CtFuG19dxW-Uik_FUkCaCWY9IB-r8ieIEK5KdUzJaaoX5d5UNZep8_jtrkIWy4EKZwtQv55G4AqJglt5FinAoczIHuPyqV4Zi5HPM29ySLv8VCUfnjmduHyRcmAmK5xHwgYHHiTPGEQWu_foDzaXFunJlKHyxFodM-P_1-fD-k.mp4"/>
+</video>
+
+<h2 class="w">Description</h2>
+<h3 class="w">A tribute to the legendary game, this short showcases Skull Kid's dark origin story. Our take on how the Zelda Universe could be realized in film. A labor of love for all those involved, this is a gift to the fans. </h3>
+
+</body>
+</html>
+
+<script>
+    var myFP = fluidPlayer(
+        'video-id',
+        {
+            layoutControls: {
+		fillToContainer: false,
+		primaryColor: false,
+		posterImage: true,
+		autoPlay: false,
+		playButtonShowing: true,
+		playPauseAnimation: true,
+		mute: false,
+		logo: {
+			imageUrl: null,
+			position: 'top left',
+			clickUrl: null,
+			opacity: 1,
+			mouseOverImageUrl: null,
+			imageMargin: '2px',
+			hideWithControls: false,
+			showOverAds: true
+		},
+		htmlOnPauseBlock: {
+			html: null,
+			height: null,
+			width: null
+		},
+		allowDownload: true,
+		allowTheatre: true,
+		playbackRateEnabled: true,
+		controlBar: {
+			autoHide: false,
+			autoHideTimeout: 3,
+			animated: true
+		},
+            },
+            vastOptions: {
+                // To implement ads see http://docs.fluidplayer.com/ad_configuration/
+            }
+        }
+    );
+
+
+</script>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<style>
+	body{ background-color:rgb(40, 44, 52);}
+
+	.w {color: white;}
+	.bstyle {
+		background: black;
+		border: none;
+		padding: 12px;
+		border: 2px solid white;
+		color: white;
+		cursor: pointer;
+	}
+</style>
+
+<body>
+<link rel="stylesheet" href="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.css"/>
+<script src="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.js"></script>
+
+<button class="bstyle" onclick="location.href='main.html'"><b>Home</b></button>
+
+<h2 class="w">The Daily Dweebs</h2>
+<video id="video-id" poster="the daily dweebs.jpg">
+    <source src="https://pouch.jumpshare.com/preview/YEO9SoAZs2kTnG5DfmgVVJ1GIRYDv-577udFGTfz5MZ-OubKrJiHganG29D9ydd5GgIjuICRWrOPh7szsX9lcKePFlQQaflQYjpr0hLiBObaUeDrdKVKcvvfnwTEDXntmUgXIZNqee5uPrPSqkZ6KNMhHoitjIh4ux_o67qimwOIl4cQlqrj6UEIlp5yZZTpOFJlODNnZ-XZKvzId6v7Fw.mp4"/>
+</video>
+
+<h2 class="w">Description</h2>
+<h3 class="w">The Daily Dweebs
+Originally created by Hjalti Hjalmarsson (who is directing and animating) and art directed by Andy Goralczyk, this 50 seconds short animation will tell the story of an adorable dog who goes through a rollercoaster of emotions.</h3>
+
+</body>
+</html>
+
+<script>
+    var myFP = fluidPlayer(
+        'video-id',
+        {
+            layoutControls: {
+		fillToContainer: false,
+		primaryColor: false,
+		posterImage: false,
+		autoPlay: false,
+		playButtonShowing: true,
+		playPauseAnimation: true,
+		mute: false,
+		logo: {
+			imageUrl: null,
+			position: 'top left',
+			clickUrl: null,
+			opacity: 1,
+			mouseOverImageUrl: null,
+			imageMargin: '2px',
+			hideWithControls: false,
+			showOverAds: false
+		},
+		htmlOnPauseBlock: {
+			html: null,
+			height: null,
+			width: null
+		},
+		allowDownload: true,
+		allowTheatre: true,
+		playbackRateEnabled: true,
+		controlBar: {
+			autoHide: false,
+			autoHideTimeout: 3,
+			animated: true
+		},
+            },
+            vastOptions: {
+                // To implement ads see http://docs.fluidplayer.com/ad_configuration/
+            }
+        }
+    );
+
+    
+</script>

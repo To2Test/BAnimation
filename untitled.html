@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<style>
+	body{ background-color:rgb(40, 44, 52);}
+
+	.w {color: white;}
+	.bstyle {
+		background: black;
+		border: none;
+		padding: 12px;
+		border: 2px solid white;
+		color: white;
+		cursor: pointer;
+	}
+</style>
+
+<body>
+<link rel="stylesheet" href="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.css"/>
+<script src="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.js"></script>
+
+<button class="bstyle" onclick="location.href='main.html'"><b>Home</b></button>
+
+<!--Type the Name Below 👇 -->
+
+<h2 class="w"></h2>
+<video id="video-id" poster="change_the_name.jpg">
+    <source src="change_the_name.mp4"/>
+</video>
+
+<h2 class="w">Description</h2>
+
+<!--Type the Description down below 👇 -->
+
+<h3 class="w"></h3>
+
+</body>
+</html>
+
+<script>
+    var myFP = fluidPlayer(
+        'video-id',
+        {
+            layoutControls: {
+		fillToContainer: false,
+		primaryColor: false,
+		posterImage: false,
+		autoPlay: false,
+		playButtonShowing: true,
+		playPauseAnimation: true,
+		mute: false,
+		logo: {
+			imageUrl: null,
+			position: 'top left',
+			clickUrl: null,
+			opacity: 1,
+			mouseOverImageUrl: null,
+			imageMargin: '2px',
+			hideWithControls: false,
+			showOverAds: false
+		},
+		htmlOnPauseBlock: {
+			html: null,
+			height: null,
+			width: null
+		},
+		allowDownload: true,
+		allowTheatre: true,
+		playbackRateEnabled: true,
+		controlBar: {
+			autoHide: false,
+			autoHideTimeout: 3,
+			animated: true
+		},
+            },
+            vastOptions: {
+                // To implement ads see http://docs.fluidplayer.com/ad_configuration/
+            }
+        }
+    );
+
+    
+</script>
